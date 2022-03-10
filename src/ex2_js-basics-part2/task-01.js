@@ -1,13 +1,10 @@
 function checkType(primitive) {
-    if (isNaN(primitive))  {
-        return undefined;
-    }
+  if (isNaN(primitive)) {
+    return undefined;
+  }
 
-if (typeof primitive === "string"|"number") {
-   return typeof primitive 
-}
+  if (typeof primitive === 'string' | 'number') {
+    return typeof primitive;
+  }
 }
 module.exports = checkType;
-
-
-

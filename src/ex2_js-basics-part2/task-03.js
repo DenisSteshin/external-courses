@@ -28,7 +28,7 @@ function arrayCheckIsOdd(array) {
   }
   return counter;
 }
-module.exports = arrayCheckIsOdd
+module.exports = arrayCheckIsOdd;
 function arrayCheckIsZero(array) {
   let counter = 0;
   for (let i = 0; i < array.length; i++) {
@@ -47,4 +47,3 @@ function arrayCheckParity(array) {
   return result;
 }
 module.exports = arrayCheckParity;
-
