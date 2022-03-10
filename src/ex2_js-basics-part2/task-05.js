@@ -7,4 +7,4 @@ for (let i = 0; i < a; i++) {
 }
  return max;
 }
-console.log(arrayFindkMax([1,2,3,33,5,6,30,8,9,10,11,3443,13]));
+module.exports = arrayFindkMax;

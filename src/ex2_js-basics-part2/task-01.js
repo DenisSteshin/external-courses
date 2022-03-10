@@ -7,8 +7,7 @@ if (typeof primitive === "string"|"number") {
    return typeof primitive 
 }
 }
-console.log(checkType("Den"))
-
+module.exports = checkType;
 
 
 

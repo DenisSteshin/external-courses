@@ -4,7 +4,7 @@ function isNumber(number) {
   }
   return false;
 }
-
+module.exports = isNumber;
 function arrayCheckIsEven(array) {
   let counter = 0;
   for (let i = 0; i < array.length; i++) {
@@ -16,7 +16,7 @@ function arrayCheckIsEven(array) {
   }
   return counter;
 }
-
+module.exports = arrayCheckIsEven;
 function arrayCheckIsOdd(array) {
   let counter = 0;
   for (let i = 0; i < array.length; i++) {
@@ -28,7 +28,7 @@ function arrayCheckIsOdd(array) {
   }
   return counter;
 }
-
+module.exports = arrayCheckIsOdd
 function arrayCheckIsZero(array) {
   let counter = 0;
   for (let i = 0; i < array.length; i++) {
@@ -40,11 +40,11 @@ function arrayCheckIsZero(array) {
   }
   return counter;
 }
-
+module.exports = arrayCheckIsZero;
 function arrayCheckParity(array) {
   const result = [arrayCheckIsEven(array), arrayCheckIsOdd(array), arrayCheckIsZero(array)];
 
   return result;
 }
+module.exports = arrayCheckParity;
 
-console.log(arrayCheckParity([1, 2, 3, 0]));

@@ -5,3 +5,4 @@ function arrayCheck(array) {
 console.log(array.length);
 return;
 }
+module.exports = arrayCheck;
