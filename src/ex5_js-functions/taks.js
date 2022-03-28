@@ -1,44 +1,43 @@
-function Calculator() {
-  this.result = 0;
-  this.add = (value) => {
-    if (isNaN(value)) {
+function CreateCalculator() {
+  let result = 0;
+  return {
+    add: function add(value) {
+      if (isNaN(value)) {
+        return add;
+      }
+      result += value;
       return add;
-    }
-    this.result += value;
-    return this.add;
-  };
-
-  this.subtract = (value) => {
-    if (isNaN(value)) {
-      return this.subtract;
-    }
-    this.result -= value;
-    return this.subtract;
-  };
-
-  this.multiply = (value) => {
-    if (isNaN(value)) {
-      return this.multiply;
-    }
-    this.result *= value;
-    return this.multiply;
-  };
-
-  this.divide = (value) => {
-    if (isNaN(value) || value === 0 || value === Infinity) {
-      console.error('Don"t divide to zero!!!');
-      return this.divide;
-    }
-    this.result /= value;
-    return this.divide;
-  };
-  this.getResult = () => {
-    return this.result;
-  };
-  this.reset = () => {
-    return (this.result = 0);
+    },
+    subtract: function subtract(value) {
+      if (isNaN(value)) {
+        return subtract;
+      }
+      result -= value;
+      return subtract;
+    },
+    multiply: function multiply(value) {
+      if (isNaN(value)) {
+        return multiply;
+      }
+      result *= value;
+      return multiply;
+    },
+    divide: function divide(value) {
+      if (isNaN(value) || value === 0 || value === Infinity) {
+        console.error('Don"t divide to zero!!!');
+        return divide;
+      }
+      result /= value;
+      return divide;
+    },
+    getResult() {
+      return result;
+    },
+    reset() {
+      result = 0;
+      return result;
+    },
   };
 }
-const calculator = new Calculator();
 
-module.exports = calculator;
+module.exports = CreateCalculator;
