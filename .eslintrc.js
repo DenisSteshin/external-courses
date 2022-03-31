@@ -12,6 +12,7 @@ module.exports = {
   },
   rules: {
     'import/prefer-default-export': 0,
+    'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
     'import/extensions': 0,
     'max-classes-per-file': 0,
     complexity: [0, 11],
@@ -67,7 +68,10 @@ module.exports = {
     'no-useless-call': 0,
     'no-useless-concat': 0,
     'no-void': 0,
-    'no-warning-comments': [0, { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
+    'no-warning-comments': [
+      0,
+      { terms: ['todo', 'fixme', 'xxx'], location: 'start' },
+    ],
     'no-with': 2,
     radix: 2,
     'vars-on-top': 0,
