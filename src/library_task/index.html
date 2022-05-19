@@ -1,12 +1,429 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My library</title>
-</head>
-<body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <title>My library</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="logo">
+          <li class="logo_element"><a class="text" href="#">Help Center</a></li>
 
-</body>
+          <li class="logo_element"><a class="text" href="#">Out Support</a></li>
+        </div>
+        <div class="user_menu">
+          <div class="user_avatar"></div>
+          <p>John Doe</p>
+          <div class="arrow"></div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="sidebar">
+          <div class="sidebar_button">
+            <button type="button" class="btn_add-book">
+              <b>+ Add a Books</b>
+            </button>
+          </div>
+          <ul class="sidebar_menu">
+            <li class="element_sidebar">
+              <img
+                class="sidebar_icon"
+                ondragstart="return false;"
+                ondrop="return false;"
+                width="14px"
+                height="14px"
+                src="assets\icons\books.svg"
+              />
+              Now Reading
+            </li>
+            <li class="element_sidebar">
+              <img
+                class="sidebar_icon"
+                ondragstart="return false;"
+                ondrop="return false;"
+                width="14px"
+                height="14px"
+                src="assets\icons\earth.svg"
+              />Browse
+            </li>
+            <li class="element_sidebar">
+              <img
+                class="sidebar_icon"
+                ondragstart="return false;"
+                ondrop="return false;"
+                width="14px"
+                height="14px"
+                src="assets\icons\buy.svg"
+              />Buy Books
+            </li>
+            <li class="element_sidebar">
+              <img
+                class="sidebar_icon"
+                ondragstart="return false;"
+                ondrop="return false;"
+                width="14px"
+                height="14px"
+                src="assets\icons\star.svg"
+              />
+              Favourite books
+            </li>
+            <li class="element_sidebar">
+              <img
+                class="sidebar_icon"
+                ondragstart="return false;"
+                ondrop="return false;"
+                width="14px"
+                height="14px"
+                src="assets\icons\list.svg"
+              />
+              Wishlist
+            </li>
+            <li class="element_sidebar">
+              <img
+                class="sidebar_icon"
+                ondragstart="return false;"
+                ondrop="return false;"
+                width="14px"
+                height="14px"
+                src="assets\icons\history.svg"
+              />
+              History
+            </li>
+          </ul>
+          <ul class="sidebar_filter">
+            <li class="element_sidebar">
+              <span>&bull;</span>
+              Must read Titles
+            </li>
+            <li class="element_sidebar">
+              <span>&bull;</span>
+              Best of Like
+            </li>
+            <li class="element_sidebar">
+              <span>&bull;</span>
+              Classic Novels
+            </li>
+            <li class="element_sidebar">
+              <span>&bull;</span>
+              Non Fiction
+            </li>
+          </ul>
+          <div class="sidebar_history">
+            <p>Your added <b>Johny Noksvel</b> in your wishlist</p>
+            <p>You died!</p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content_title">
+            <p>Browse Available Book</p>
+          </div>
+
+          <div class="content_header">
+            <ul class="content_menu">
+              <li class="element_menu">All Books</li>
+              <li class="element_menu">Most Recent</li>
+              <li class="element_menu">Most Popular</li>
+              <li class="element_menu">Free Books</li>
+            </ul>
+            <div class="content_search">
+              <input
+                class="search"
+                type="search"
+                name="content_search"
+                id="search"
+                placeholder="Enter Keywords"
+              />
+              <img
+                ondragstart="return false;"
+                ondrop="return false;"
+                class="search_icon"
+                width="14px"
+                height="14px"
+                src="./assets/icons/search.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+
+          <div class="content_main">
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating1" id="rating1" />
+                  <label for="rating1" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating2" />
+                  <label for="rating2" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating3" />
+                  <label for="rating3" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating4" />
+                  <label for="rating4" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating5" />
+                  <label for="rating5" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating21" id="rating21" />
+                  <label for="rating21" class="fa fa-star"></label>
+                  <input type="radio" name="rating21" id="rating22" />
+                  <label for="rating22" class="fa fa-star"></label>
+                  <input type="radio" name="rating21" id="rating23" />
+                  <label for="rating23" class="fa fa-star"></label>
+                  <input type="radio" name="rating21" id="rating24" />
+                  <label for="rating24" class="fa fa-star"></label>
+                  <input type="radio" name="rating21" id="rating25" />
+                  <label for="rating25" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating31" id="rating31" />
+                  <label for="rating31" class="fa fa-star"></label>
+                  <input type="radio" name="rating31" id="rating32" />
+                  <label for="rating32" class="fa fa-star"></label>
+                  <input type="radio" name="rating31" id="rating33" />
+                  <label for="rating33" class="fa fa-star"></label>
+                  <input type="radio" name="rating31" id="rating34" />
+                  <label for="rating34" class="fa fa-star"></label>
+                  <input type="radio" name="rating31" id="rating35" />
+                  <label for="rating35" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating41" id="rating41" />
+                  <label for="rating41" class="fa fa-star"></label>
+                  <input type="radio" name="rating41" id="rating42" />
+                  <label for="rating42" class="fa fa-star"></label>
+                  <input type="radio" name="rating41" id="rating43" />
+                  <label for="rating43" class="fa fa-star"></label>
+                  <input type="radio" name="rating41" id="rating44" />
+                  <label for="rating44" class="fa fa-star"></label>
+                  <input type="radio" name="rating41" id="rating45" />
+                  <label for="rating45" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating51" id="rating51" />
+                  <label for="rating51" class="fa fa-star"></label>
+                  <input type="radio" name="rating51" id="rating52" />
+                  <label for="rating52" class="fa fa-star"></label>
+                  <input type="radio" name="rating51" id="rating53" />
+                  <label for="rating53" class="fa fa-star"></label>
+                  <input type="radio" name="rating51" id="rating54" />
+                  <label for="rating54" class="fa fa-star"></label>
+                  <input type="radio" name="rating51" id="rating55" />
+                  <label for="rating55" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating1" id="rating1" />
+                  <label for="rating1" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating2" />
+                  <label for="rating2" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating3" />
+                  <label for="rating3" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating4" />
+                  <label for="rating4" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating5" />
+                  <label for="rating5" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating1" id="rating1" />
+                  <label for="rating1" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating2" />
+                  <label for="rating2" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating3" />
+                  <label for="rating3" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating4" />
+                  <label for="rating4" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating5" />
+                  <label for="rating5" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating1" id="rating1" />
+                  <label for="rating1" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating2" />
+                  <label for="rating2" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating3" />
+                  <label for="rating3" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating4" />
+                  <label for="rating4" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating5" />
+                  <label for="rating5" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating1" id="rating1" />
+                  <label for="rating1" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating2" />
+                  <label for="rating2" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating3" />
+                  <label for="rating3" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating4" />
+                  <label for="rating4" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating5" />
+                  <label for="rating5" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating1" id="rating1" />
+                  <label for="rating1" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating2" />
+                  <label for="rating2" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating3" />
+                  <label for="rating3" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating4" />
+                  <label for="rating4" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating5" />
+                  <label for="rating5" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating1" id="rating1" />
+                  <label for="rating1" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating2" />
+                  <label for="rating2" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating3" />
+                  <label for="rating3" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating4" />
+                  <label for="rating4" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating5" />
+                  <label for="rating5" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating1" id="rating1" />
+                  <label for="rating1" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating2" />
+                  <label for="rating2" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating3" />
+                  <label for="rating3" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating4" />
+                  <label for="rating4" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating5" />
+                  <label for="rating5" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+            <div class="cart_book">
+              <div class="cover"></div>
+              <span>Name book</span>
+              <span>Author</span>
+              <div class="rating-css">
+                <div class="star-icon">
+                  <input type="radio" name="rating1" id="rating1" />
+                  <label for="rating1" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating2" />
+                  <label for="rating2" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating3" />
+                  <label for="rating3" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating4" />
+                  <label for="rating4" class="fa fa-star"></label>
+                  <input type="radio" name="rating1" id="rating5" />
+                  <label for="rating5" class="fa fa-star"></label>
+                </div>
+              </div>
+            </div>
+            <!--***************************************-->
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="support_container"><div class="support"></div></div>
+
+        <div class="settings_container"><div class="settings"></div></div>
+      </footer>
+    </div>
+  </body>
 </html>
