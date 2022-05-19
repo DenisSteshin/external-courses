@@ -127,12 +127,13 @@ a.text {
   border-style: none;
   border-radius: 6px;
   background-color: #e76843;
-  height: 40px;
+  height: 80px;
   width: 80%;
-  font-size: 14px;
+  font-size: 18px;
   padding: 10px;
   margin: 15px;
   color: white;
+  cursor: pointer;
 }
 
 .btn_add-book:hover {
@@ -349,9 +350,10 @@ a.text {
   color: #838383;
 }
 
-.rating-css label:active {
-  transform: scale(0.8);
-  transition: 0.3s ease;
+.rating-css label:active,
+label:hover {
+  transform: scale(1.5);
+  transition: 0.1s ease-in-out;
 }
 /*--------------------------Rating stars-------------------*/
 
