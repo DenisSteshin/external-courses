@@ -12,6 +12,7 @@ module.exports = {
   },
   rules: {
     'import/prefer-default-export': 0,
+    'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
     'import/extensions': 0,
     'max-classes-per-file': 0,
     complexity: [0, 11],
